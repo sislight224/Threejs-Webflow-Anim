@@ -116,7 +116,7 @@
 
   let scene = new THREE.Scene();
   // scene.fog = new THREE.Fog( 0x000000, 0.1, 2);
-  scene.background = new THREE.Color(0x111111)
+  scene.background = new THREE.Color(0xeeeeee)
 
   let camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 1, 1000);
   camera.position.set(-6 , 1, 20);
@@ -294,14 +294,14 @@
       value : light.position
     },
     pointSize: {
-      value: 4 * windowHalfY / 540
+      value: 6 * windowHalfY / 540
     }
   }
 
   const planeData = {
     width: 30,
-    height: 30,
-    wSeg: 150,
+    height: 50,
+    wSeg: 100,
     hSeg: 150
   }
 
